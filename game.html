@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    
+    <title>Snake</title>
+</head>
+<body>
+
+
+    <!-- <div class = "overlay"></div>
+    <div class = "modal"> 
+       <h1> Faça o seu test drive hoje!</h1>
+       <button  class = "btn-hide"> ok</button>	
+   </div> -->
+
+    <h1>Hello World!</h1>
+    <div class = "controls">
+
+        <div class="container__game">
+                <div class = "gamemode">
+                    <label>Game Mode:</label> 
+                    <div>
+                        <input type="radio" name ="one"/>
+                        <label for="easy">Easy</label>
+                    </div>
+                    <div>
+                        <input type="radio" name ="one" checked/>
+                        <label for="normal">Normal</label>
+                    </div>  
+                <br>
+            </div>
+            
+            <label>Horizontal Grid:</label>
+            <input type="number" min="0" max="1000" value="100" id="" />
+            <br>
+            
+            <label>Vertical Grid:</label>
+            <input type="number" min="0" max="1000" value="100" id="" >
+            <br>
+            
+            <label>Snake Color:</label>  
+            <input type="color" value="#FFFFFF" id="snake__Color" />
+            <br>
+            
+            <label>Food color:</label>
+            <input type="color" value="#FFFFFF" id="food__Color" />
+            <br>
+            
+            <label>Grid Color:</label>
+            <input type="color" value="#FFFFFF" id="grid__Color" />
+            <br>    
+
+            <button class = "btn-show" type = "button">Mostrar</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="/JS/game.js"></script>
+</body>
+</html>

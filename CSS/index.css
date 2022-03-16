@@ -3,10 +3,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: black;
+  font-family: "Common Pixel", sans-serif;
+  color: white;
+  background-color: #048243;
 }
 
 .container {
@@ -14,10 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
 .container__one {
-  margin-top: 5%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -29,7 +28,6 @@ body {
   position: relative;
   font-weight: 200;
   font-size: 4em;
-  font-family: "Common Pixel", sans-serif;
 }
 
 .title .text-wrapper {
@@ -45,24 +43,10 @@ body {
   display: inline-block;
 }
 
-.sub__title {
-  font-weight: 100;
-  font-size: 2em;
-  color: white;
-  padding-bottom: 0.5rem;
-}
-
-#img {
-  margin-top: 30%;
-  width: 500px;
-  height: auto;
-}
-
 .btn {
   margin-top: 20px;
   font-size: 17px;
   font-weight: bold;
-  font-family: "Common Pixel", sans-serif;
   border: none;
   border-radius: 0.75em;
   background: white;
@@ -88,6 +72,61 @@ body {
 .btn:active .button_top {
   /* Push the button downwards when pressed */
   transform: translateY(0);
+}
+
+#img {
+  margin-top: 30%;
+  width: 500px;
+  height: auto;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* caixa principal com contudo do JS */
+.modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  z-index: 3;
+  margin: 20px;
+}
+
+.controls {
+  width: 50%;
+  flex-direction: column;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container__game {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
