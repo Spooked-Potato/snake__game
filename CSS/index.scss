@@ -98,39 +98,38 @@
   }
   
 
-  .overlay
+  #overlay
   {
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: #000;
-      opacity: 0.5;
-      z-index: 2;
-      
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
   }
   
-  /* caixa principal com contudo do JS */
+  // /* caixa principal com contudo do JS */
   
-  .modal
-  {
-      display: none;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      width: 400px;
-      height: 200px;
-      transform: translate(-50%, -50%);
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center;
-      background-color: #fff;
-      border: 5px solid rgb(0, 0, 0);
-      border-radius: 5px;
-      padding: 50px; 
-      z-index: 3;
-      margin:20px;
-  }
+  // .modal
+  // {
+  //     display: none;
+  //     position: fixed;
+  //     left: 50%;
+  //     top: 50%;
+  //     width: 400px;
+  //     height: 200px;
+  //     transform: translate(-50%, -50%);
+  //     justify-content: space-between;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     background-color: #fff;
+  //     border: 5px solid rgb(0, 0, 0);
+  //     border-radius: 5px;
+  //     padding: 50px; 
+  //     z-index: 3;
+  //     margin:20px;
+  // }
 
 
   //Game Page Html

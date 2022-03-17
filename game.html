@@ -9,10 +9,9 @@
     <title>Snake</title>
 </head>
 <body>
+    <div id="overlay" onclick="off()"></div>
 
-    <h1>Hello World!</h1>
     <div class = "controls">
-
         <div class="container__game">
                 <div class = "gamemode">
                     <label>Game Mode:</label> 
@@ -47,11 +46,10 @@
             <input type="color" value="#FFFFFF" id="grid__Color" />
             <br>    
 
-            <button class = "btn-show" type = "button">Mostrar</button>
+            <button onclick="on()">PLAY</button>
         </div>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="/JS/game.js"></script>
+    <script src="JS/game.js"></script>
 </body>
 </html>
