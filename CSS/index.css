@@ -1,11 +1,19 @@
 @import url("http://fonts.cdnfonts.com/css/common-pixel");
+:root {
+  --snake__color: blue;
+  --food__color: red;
+  --grid__color: green;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Common Pixel", sans-serif;
-  color: white;
-  background-color: black;
+}
+
+html, body {
+  height: 100%;
 }
 
 .container {
@@ -14,31 +22,28 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-color: black;
 }
-
-.container__one {
+.container .container__one {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
-.title {
+.container .container__one .title {
   position: relative;
   font-weight: 200;
   font-size: 4em;
 }
-
-.title .text-wrapper {
+.container .container__one .title .title .text-wrapper {
   position: relative;
   display: inline-block;
   padding-bottom: 0.1em;
   overflow: hidden;
   color: white;
 }
-
-.title .letter {
+.container .container__one .title .title .letter {
   transform-origin: 50% 100%;
   display: inline-block;
 }
@@ -51,8 +56,7 @@
   border-radius: 0.75em;
   background: white;
 }
-
-.button_top {
+.btn .button_top {
   display: block;
   box-sizing: border-box;
   border: 2px solid white;
@@ -63,13 +67,11 @@
   transform: translateY(-0.2em);
   transition: transform 0.1s ease;
 }
-
-.btn:hover .button_top {
+.btn .btn:hover .button_top {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
-
-.btn:active .button_top {
+.btn .btn:active .button_top {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
@@ -78,6 +80,35 @@
   margin-top: 30%;
   width: 500px;
   height: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+.controls .container__game {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.controls .container__game .gamemode {
+  display: flex;
+  padding: 10px;
+}
+.controls .container__game .gamemode .grid {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-left: 10px;
+}
+.controls .container__game .gamemode .grid #align_item {
+  justify-content: center;
 }
 
 #overlay {
@@ -89,49 +120,31 @@
   z-index: 2;
   cursor: pointer;
 }
-
-.controls {
+#overlay .center {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.container__game {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gamemode {
-  display: flex;
-  padding: 10px;
-}
-
-.grid {
-  background-color: white;
-  color: black;
-  text-align: center;
-  margin-left: 10px;
-}
-
-#align_item {
   justify-content: center;
+  height: 100%;
 }
-
-.gridContainer {
-  background-color: red;
+#overlay .center .gridContainer {
+  background-color: var(--grid__color);
   display: inline-block;
 }
-.gridContainer .row {
+#overlay .center .gridContainer .row {
   display: inline-block;
 }
-.gridContainer .row .gridItem {
+#overlay .center .gridContainer .row .gridItem {
   width: 20px;
   height: 20px;
   border: 1px solid white;
+}
+#overlay .center .snake {
+  background-color: var(--snake__color);
+  border: 1px solid black;
+}
+#overlay .center .food {
+  background-color: var(--food__color);
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=index.css.map */

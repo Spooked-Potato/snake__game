@@ -10,8 +10,14 @@
 </head>
 <body>
     <div id = "overlay" class = "btn__off">
-        <div class= "gridContainer" id = "gridContainer"></div>
-    </div>
+        <div class = "center">
+            <div>
+                <div class= "gridContainer" id = "gridContainer">
+                    <div id = "game-board"></div>
+                </div>
+            </div>
+        </div>   
+    </div>  
 
     <div class = "controls">
         <div class="container__game">
@@ -32,31 +38,31 @@
                 </div>
             <div class = "gamemode">
                 <label>Horizontal Grid: </label>
-                <input type="number" min="0" max="1000" value="100" id="" class = "grid" />
+                <input type="number" min="10" max="75" value="50" id="" class = "grid" />
                 <br>
             </div>
                     
             <div class = "gamemode">
                 <label>Vertical Grid:</label>
-                <input type="number" min="0" max="1000" value="100" id="" class = "grid">
+                <input type="number" min="10" max="75" value="50" id="" class = "grid">
                 <br>
             </div>
                 
             <div class = "gamemode">
                 <label>Snake Color:</label>  
-                <input type="color" value="#00FF00" id="snake__Color" class = "grid"/>
+                <input type="color" value="#00FF00" id="snake__color" class = "grid"/>
                 <br>
             </div>
                 
             <div class = "gamemode">
                 <label>Food color:</label>
-                <input type="color" value="#FF0000" id="food__Color" class = "grid"/>
+                <input type="color" value="#FF0000" id="food__color" class = "grid"/>
                 <br>
             </div>
                     
             <div class = "gamemode">
                 <label>Grid Color:</label>
-                <input type="color" value="#FFFFFF" id="grid__Color" class = "grid"/>
+                <input type="color" value="#FFFFFF" id="grid__color" class = "grid"/>
                 <br>    
                 <br>
             </div>

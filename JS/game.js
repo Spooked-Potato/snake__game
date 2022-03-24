@@ -7,8 +7,9 @@ btn_on.addEventListener("click", function () {
     console.log("hey");
 })
 
-var rows = 11;
-var columns = 11;
+
+var rows = 50;
+var columns = 50;
 
 gridContainer = document.getElementById('gridContainer');
 for (let rowNumber = 0; rowNumber < rows; rowNumber++) {
@@ -25,6 +26,7 @@ for (let rowNumber = 0; rowNumber < rows; rowNumber++) {
         gridItem.id = `${rowNumber}-${colNumber}`;
     }
 }
+
 
 btn_off.addEventListener("click", function () {
     document.getElementById("overlay").style.display = "none";
