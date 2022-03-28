@@ -4,9 +4,8 @@ const btn_off = document.querySelector(".btn__off");
 
 btn_on.addEventListener("click", function () {
     document.getElementById("overlay").style.display = "block";
-    console.log("hey");
-})
 
+})
 
 var rows = 50;
 var columns = 50;
@@ -14,7 +13,7 @@ var columns = 50;
 gridContainer = document.getElementById('gridContainer');
 for (let rowNumber = 0; rowNumber < rows; rowNumber++) {
 
-    console.log("ola");
+
     var row = document.createElement('div');
     row.classList.add('row');
     gridContainer.appendChild(row);
@@ -25,12 +24,19 @@ for (let rowNumber = 0; rowNumber < rows; rowNumber++) {
         gridItem.classList.add('gridItem');
         gridItem.id = `${rowNumber}-${colNumber}`;
     }
+
 }
 
 
+submit.onclick = () => {
+
+    gridContainer.style.backgroundColor = snake__color.value;
+    gridContainer.style.backgroundColor = food__color.value;
+    gridContainer.style.backgroundColor = grid__color.value;
+}
+
 btn_off.addEventListener("click", function () {
     document.getElementById("overlay").style.display = "none";
-    console.log("Goodbye");
 })
 
 
