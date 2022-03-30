@@ -13,7 +13,10 @@
         <div class = "center">
             <div>
                 <div class= "gridContainer" id = "gridContainer">
-                    <div id = "game-board"></div>
+                    <div id = "game-board">
+                         <div id = "snakeContainer"></div>
+                        <div id = "foodContainer"></div>
+                    </div>
                 </div>
             </div>
         </div>   
@@ -38,13 +41,13 @@
                 </div>
             <div class = "gamemode">
                 <label>Horizontal Grid: </label>
-                <input type="number" min="10" max="75" value="50" id="" class = "grid" />
+                <input type="number" min="10" max="75" value="50" id="grid__row" class = "grid" />
                 <br>
             </div>
                     
             <div class = "gamemode">
                 <label>Vertical Grid:</label>
-                <input type="number" min="10" max="75" value="50" id="" class = "grid">
+                <input type="number" min="10" max="75" value="50" id="grid__colum" class = "grid">
                 <br>
             </div>
                 
@@ -68,7 +71,7 @@
             </div>
                 
             <button class = "btn">
-                <a class = "button_top" id = "submit">PLAY</a>
+                <a class = "button_top" id ="submit">PLAY</a>
              </button>
         </div>
     </div>

@@ -32,7 +32,7 @@ html, body
   height: 100vh;
   background-color: black;
     
-  .container__one
+  .sub__container
   {
     width: 50%;
     display: flex;
@@ -40,42 +40,33 @@ html, body
     flex-direction: column;
     align-items: center;
 
-    .title
+    .word__container
     {
-      position: relative;
-      font-weight: 200;
-      font-size: 4em;
+      font-weight: 800;
+      font-size: 3.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      overflow: hidden;
       
-      .title .text-wrapper
+      .word 
       {
-        position: relative;
+        color:white;
         display: inline-block;
-        padding-bottom: 0.1em;
-        overflow: hidden;
-        color: white;
-      }
-    
-      .title .letter
-      {
-        transform-origin: 50% 100%;
-        display: inline-block;
-        // line-height: 1em;
+        line-height: 1em;
       }
     }
   }
-}
-
-
+  
+  
   .btn
   {
-
     margin-top: 20px;
     font-size: 17px;
     font-weight: bold;
     border: none;
     border-radius: 0.75em;
     background:  white;
-
+    
     .button_top 
     {
       display: block;
@@ -92,23 +83,24 @@ html, body
     .btn:hover .button_top 
     {
       /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
+      transform: translateY(-0.33em);
     }
     
     .btn:active .button_top 
     {
       /* Push the button downwards when pressed */
-    transform: translateY(0);
+      transform: translateY(0);
     }
   }
   
-
+  
   #img
   {
     margin-top: 30%;
     width: 500px;
     height: auto;
   }
+}
   
  
   
@@ -187,13 +179,13 @@ html, body
           }
         }
 
-        .snake
+        #snake
         {
           background-color: var(--snake__color);
           border: 1px solid black;
         }
 
-        .food
+        #food
         {
           background-color: var(--food__color);
           border: 1px solid black;
