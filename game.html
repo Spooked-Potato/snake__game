@@ -9,45 +9,19 @@
     <title>Snake</title>
 </head>
 <body>
-    <div id = "overlay" class = "btn__off">
-        <div class = "center">
-            <div>
-                <div class= "gridContainer" id = "gridContainer">
-                    <div id = "game-board">
-                         <div id = "snakeContainer"></div>
-                        <div id = "foodContainer"></div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-    </div>  
-
+        <div id = "overlay" class = "btn__off">
+            <div class = "center">
+                <p class="score">Score: 0</p>
+                <div id="game-board"></div>
+            </div>   
+        </div>  
+        
     <div class = "controls">
         <div class="container__game">
-
-            <label>Game Mode:</label> 
-                <div id = "align_item">
-                    <div>
-                        <input type="radio" name ="one"/>
-                        <label for="easy">Easy</label>
-                        <br>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name ="one" checked/>
-                        <label for="normal">Normal</label>
-                        <br>
-                    </div>  
-                </div>
+            <h3>Options</h3>                    
             <div class = "gamemode">
-                <label>Horizontal Grid: </label>
-                <input type="number" min="10" max="75" value="50" id="grid__row" class = "grid" />
-                <br>
-            </div>
-                    
-            <div class = "gamemode">
-                <label>Vertical Grid:</label>
-                <input type="number" min="10" max="75" value="50" id="grid__colum" class = "grid">
+                <label>Grid: Size</label>
+                <input type="number" min="10" max="50" value="15" id="grid__size" class = "grid">
                 <br>
             </div>
                 
@@ -65,10 +39,17 @@
                     
             <div class = "gamemode">
                 <label>Grid Color:</label>
-                <input type="color" value="#FFFFFF" id="grid__color" class = "grid"/>
+                <input type="color" value="#FF00FF" id="grid__color" class = "grid"/>
+                <br>    
+            </div>
+
+            <div class = "gamemode">
+                <label>Snake Speed:</label>
+                <input type="range" min="1" max="5" value="2" id="snake__speed" class = "grid"/>
                 <br>    
                 <br>
             </div>
+            
                 
             <button class = "btn">
                 <a class = "button_top" id ="submit">PLAY</a>

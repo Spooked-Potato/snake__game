@@ -43,7 +43,13 @@ html, body {
   display: inline-block;
   line-height: 1em;
 }
-.container .btn {
+.container #img {
+  margin-top: 30%;
+  width: 500px;
+  height: auto;
+}
+
+.btn {
   margin-top: 20px;
   font-size: 17px;
   font-weight: bold;
@@ -51,7 +57,7 @@ html, body {
   border-radius: 0.75em;
   background: white;
 }
-.container .btn .button_top {
+.btn .button_top {
   display: block;
   box-sizing: border-box;
   border: 2px solid white;
@@ -62,18 +68,15 @@ html, body {
   transform: translateY(-0.2em);
   transition: transform 0.1s ease;
 }
-.container .btn .btn:hover .button_top {
+
+.btn:hover .button_top {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
-.container .btn .btn:active .button_top {
+
+.btn:active .button_top {
   /* Push the button downwards when pressed */
   transform: translateY(0);
-}
-.container #img {
-  margin-top: 30%;
-  width: 500px;
-  height: auto;
 }
 
 .controls {
@@ -93,6 +96,7 @@ html, body {
 }
 .controls .container__game .gamemode {
   display: flex;
+  align-items: center;
   padding: 10px;
 }
 .controls .container__game .gamemode .grid {
@@ -110,7 +114,7 @@ html, body {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #000;
   z-index: 2;
   cursor: pointer;
 }
@@ -132,13 +136,31 @@ html, body {
   height: 20px;
   border: 1px solid white;
 }
-#overlay .center #snake {
-  background-color: var(--snake__color);
-  border: 1px solid black;
+
+#game-board {
+  background-color: var(--grid__color);
+  border: 1px solid white;
+  width: 650px;
+  height: 650px;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
 }
-#overlay .center #food {
+
+.snake {
+  background-color: var(--snake__color);
+  border: 0.25vmin solid black;
+}
+
+.food {
   background-color: var(--food__color);
-  border: 1px solid black;
+  border: 0.25vmin solid black;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
